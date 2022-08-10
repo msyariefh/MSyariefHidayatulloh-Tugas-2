@@ -28,7 +28,7 @@ public class CountdownText : MonoBehaviour {
 		
 		
 		}
-	
-		OnCountdownFinished ();
-	}
+
+        OnCountdownFinished();
+    }
 }
