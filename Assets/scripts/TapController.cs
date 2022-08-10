@@ -77,13 +77,14 @@ public class TapController : MonoBehaviour {
 
 	void OnTriggerEnter2D(Collider2D col){
 
-		if (col.gameObject.tag == "ScoreZone") {
+
+		if (col.gameObject.CompareTag("ScoreZone")) {
 		
 			OnPlayerScored ();
 			scoreAudio.Play();
 		}
 
-		if (col.gameObject.tag == "DeadZones") {
+		if (col.gameObject.CompareTag("DeadZone")) {
 		
 			rigidbody.simulated = false;
 			OnPlayerDied ();
